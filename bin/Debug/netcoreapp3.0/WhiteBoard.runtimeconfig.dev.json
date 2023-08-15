@@ -1,0 +1,10 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\batis\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\batis\\.nuget\\packages",
+      "D:\\Visual Studio\\Общие компоненты, SDK\\NuGetPackages",
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ]
+  }
+}

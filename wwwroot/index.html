@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="lib/signalr.min.js"></script>
+    
+    <link rel="stylesheet" href="./style/main.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+        crossorigin="anonymous"></script>
+    <title>WhiteBoard</title>
+    <style>
+        canvas {
+            cursor: crosshair;
+            border: 1px solid #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="game-container">
+        <div class="canvas-container">
+            <canvas id="canvas" width="800" height="500" onmouseout="clearMousePositions()"></canvas>
+            <select id="color">
+                <option value="black">Black</option>
+                <option value="red">Red</option>
+                <option value="yellow">Yellow</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+            </select>
+        </div>
+        <div class="chat">
+            <ul class="discussion" id="discussion"></ul>
+            <div class="inputs">
+                <input type="text" id="message" />
+                <input type="button" id="sendmessage" value="Send" /> 
+            </div>
+        </div>
+        <div class="start-game" id="start-game">
+            <p>Menu</p>
+            <div class="inputs">
+                <input type="text" id="wordinput" />
+                <input type="button" id="sendword" value="AddWord" />
+                <input type="button" id="ready" value="Ready" />
+            </div> 
+        </div>
+    </div>
+    <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+
+</html>

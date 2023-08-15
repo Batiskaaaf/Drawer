@@ -1,0 +1,43 @@
+.game-container {
+    display: flex;
+}
+
+.canvas-container {
+    max-width: 60%;
+}
+
+.chat {
+    margin-left: 50px;
+    border: 1px solid;
+    width: 250px;
+    height: 480px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.start-game{
+    margin-left: 50px;
+    border: 1px solid;
+    width: 270px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.discussion {
+    flex: 1 1 auto;
+    padding: 0;
+    list-style-type: none 
+}
+
+#ready{
+    margin-top: 60px;
+    margin-left: 70px;
+    height: 50px;
+    width: 100px;
+}
+
