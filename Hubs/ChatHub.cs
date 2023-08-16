@@ -30,7 +30,7 @@ namespace WhiteBoard.Hubs
                 if(Context.ConnectionId == GameEngine.Instance.CurrentDrawer.Id)
                     await Clients.Caller.SendAsync("broadcastMessage", Game, "Bruh, rly");
                     
-                await Clients.Caller.SendAsync("broadcastMessage", name, message);
+                await Clients.All.SendAsync("broadcastMessage", name, message);
                 var result = GameEngine.Instance.Validate(name, message);
 
                 if(!result.Value)
