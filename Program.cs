@@ -15,8 +15,6 @@ namespace WhiteBoard
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
-                    webBuilder.UseKestrel();
-                    webBuilder.UseUrls("https://localhost:5001");
                 });
     }
 }
