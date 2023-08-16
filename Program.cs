@@ -16,7 +16,7 @@ namespace WhiteBoard
                 {
                     webBuilder.UseStartup<Startup>();
                     webBuilder.UseKestrel();
-                    webBuilder.UseUrls("https://26.149.84.111:5001");
+                    webBuilder.UseUrls("https://localhost:5001");
                 });
     }
 }
